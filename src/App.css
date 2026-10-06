@@ -1,0 +1,109 @@
+/* Overall Page Background */
+body {
+  margin: 0;
+  background-color: #f1f5f9; /* Light slate backdrop */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.App {
+  box-sizing: border-box;
+  text-align: center;
+  padding: 40px 20px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Header Banner - Navy Blue & Red Accent */
+.Header {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #ffffff;
+  background-color: #0a3161; /* USA Navy Blue */
+  padding: 12px 28px;
+  border-radius: 12px;
+  margin-bottom: 24px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.15);
+  border-bottom: 4px solid #b31942; /* USA Crimson Stripe */
+}
+
+/* Main Calculator Shell */
+.Calculator {
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+  background-color: #0a3161; /* Deep Navy Blue */
+  border-radius: 20px;
+  padding: 24px;
+  box-shadow: 0 12px 30px rgba(10, 49, 97, 0.35),
+              0 4px 12px rgba(0, 0, 0, 0.2);
+  border: 3px solid #1a4980;
+}
+
+/* Display Screen */
+.Display {
+  background-color: #ffffff;
+  border: 3px solid #b31942; /* Red Accent Border */
+  border-radius: 12px;
+  height: 70px;
+  font-size: 2.2rem;
+  font-weight: 700;
+  padding: 10px 16px;
+  text-align: right;
+  color: #0a3161;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  word-break: break-all;
+}
+
+/* Keypad Grid */
+.Keypad {
+  display: grid;
+  gap: 12px;
+  grid-template-columns: repeat(4, 1fr); 
+}
+
+/* Base Button Styles (Static - No Hover/Active Effects) */
+.Button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 60px;
+  border: none;
+  border-radius: 12px;
+  font-size: 1.5rem;
+  font-weight: 700;
+  background-color: #ffffff; /* Crisp White */
+  color: #0a3161; /* Deep Navy text */
+  cursor: pointer;
+  box-shadow: 0 4px 0 #cbd5e1;
+  user-select: none;
+}
+
+/* Optional Custom Variant Styles (No Hover/Active Effects) */
+
+/* Red Operator Buttons (+, -, ×, ÷) */
+.Button-operator {
+  background-color: #b31942; /* Crimson Red */
+  color: #ffffff;
+  box-shadow: 0 4px 0 #820e2c;
+}
+
+/* Dark Slate Clear Button (CLR) */
+.Button-clear {
+  background-color: #334155;
+  color: #ffffff;
+  box-shadow: 0 4px 0 #1e293b;
+}
+
+/* Gold Equals Button (=) */
+.Button-equals {
+  background-color: #ffd700;
+  color: #0a3161;
+  box-shadow: 0 4px 0 #ccac00;
+}
